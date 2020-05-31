@@ -3,8 +3,6 @@ from .models import Source, Articles
 from datetime import datetime
 
 
-
-
 # Getting the api key
 api_key = None
 
@@ -105,4 +103,20 @@ def process_articles(my_articles):
             article_location_list.append(article_source_object)
 
     return article_location_list
+
+
+def search_articles(article_name):
+    search_article_url = 'https://newsapi.org/v2/everything?q=bitcoin&apiKey=API_KEY'.format(api_key,article_name)
+    with urllib.request.urlopen(search_article_url) as url:
+        search_article_data = url.read()
+        search_article_response = json.loads(search_article_data)
+
+        search_article_results = None
+
+        if search_article_response['results']:
+            search_article_list = search_article_response['results']
+            search_article_results = process_results(search_article_list)
+
+
+    return search_article_results
 
