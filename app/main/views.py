@@ -20,7 +20,7 @@ def index():
     category_science = get_sources('science')
 
 
-    title = 'Welcome to the Notable Events | Weather | Sports Exclusive'
+    title = 'Welcome to the Noisey '
 
     return render_template('index.html', title=title, general=category_general, business=category_business, entertainment=category_entertainment, sports=category_sports, technology=category_technology, science=category_science) # first variable represents variable in template while the other represents the one in the view
 
