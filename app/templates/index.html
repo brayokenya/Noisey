@@ -7,16 +7,20 @@
 <!----Content Block----->
 {% block content %}
 <div class="container-fluid">
+    <form>
+        <input type="text" name="article_query" placeholder="Search for News" class="form-control">
+        <input type="submit" value="Get News" class="btn">
+    </form>
     <div class="row">
         <br>
         <br>
         <div class="col-md-12 heading">
-            <h1>Welcome to the Noisey | Weather | Sports Exclusive</h1>
+            <h1>Welcome to the Noisey News | Only the Best and Latest Globally</h1>
         </div>
     </div>
     <div class="card">
         <div class="row">
-            <div class="col-md-12 cat">
+            <div class="col-md-12 cat" id="general news">
                 <h1>General News</h1>
             </div>
             {{macro.sourceCategories(general)}}
@@ -24,38 +28,39 @@
     </div>
     <hr>
     <div class="row">
-        <div class="col-md-12 cat">
+        <div class="col-md-12 cat" id="business">
             <h1> Business </h1>
         </div>
         {{macro.sourceCategories(business)}}
     </div>
     <hr>
     <div class="row">
-        <div class="col-md-12 cat">
+        <div class="col-md-12 cat" id="entertainment">
             <h1> Entertainment </h1>
         </div>
         {{macro.sourceCategories(entertainment)}}
     </div>
     <hr>
     <div class="row">
-        <div class="col-md-12 cat">
+        <div class="col-md-12 cat" id="sports">
             <h1> Sports </h1>
         </div>
         {{macro.sourceCategories(sports)}}
     </div>
     <hr>
     <div class="row">
-        <div class="col-md-12 cat">
+        <div class="col-md-12 cat" id="technology">
             <h1> Technology </h1>
         </div>
         {{macro.sourceCategories(technology)}}
     </div>
     <hr>
     <div class="row">
-        <div class="col-md-12 cat">
+        <div class="col-md-12 cat" id="science">
             <h1> Science </h1>
         </div>
         {{macro.sourceCategories(science)}}
     </div>
 </div>
+
 {% endblock %}

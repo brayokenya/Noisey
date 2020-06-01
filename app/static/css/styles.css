@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background-image: url('https://company.vice.com/wp-content/uploads/2019/09/Preview-Noisey-Vice-White.png');
+    background-image: url();
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,8 +16,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-size: 20px;
-    color: white;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
 }
 
 .navbar {
@@ -25,24 +25,26 @@ body {
 }
 
 .articles {
-    background-color: rgb(13, 95, 71);
+    background-color: rgb(173, 173, 173);
+    margin: 5px;
+    padding: 3%;
 }
 
 .detail {
-    background-color: #0B0C10;
+    color: rgb(0, 0, 0);
 }
 
 h1 {
-    color: #66FCF1;
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 hr {
     overflow: visible;
     height: 30px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(0, 0, 0);
     border-width: 1px 0 0 0;
     border-radius: 5px;
 }
@@ -55,4 +57,8 @@ hr {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     background-color: rgb(24, 175, 24);
+}
+
+.card {
+    border-radius: 5px;
 }
