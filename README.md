@@ -25,3 +25,8 @@
 * `pip install -r requirements.txt`
 * `Python3.8`
 * `export API_KEY=<Your api key>`
+
+
+
+
+## [License](https://github.com/brayokenya/Noisey/blob/master/LICENSE)
